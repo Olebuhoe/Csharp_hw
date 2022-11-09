@@ -7,9 +7,10 @@
 int[] CreateArray(int n)
 {
     int[] arr = new int[n];
+    Random rnd = new Random();
     for (int i = 0; i < n; i++)
     {
-        arr[i] = new Random().Next(1, 10);
+        arr[i] = rnd.Next(1, 10);
     }
     return arr;
 }
@@ -24,4 +25,4 @@ void PrintArray(int[] array)
     Console.Write($"{array[array.Length - 1]}]");
 }
 
-PrintArray(CreateArray(10));
+PrintArray(CreateArray(5));

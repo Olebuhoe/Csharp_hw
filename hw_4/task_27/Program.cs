@@ -7,14 +7,14 @@
 
 // Не стал разбивать на функции, т.к. было бы примерно то же, что и в задаче 25.
 
-long num = 1233275958223412;
+long num = 12332758223412;
 long temp = num;
 long b = 0;
 
 while (num > 0)
 {
-    long a = num % 10;
-    b += a;
+    // int a = Convert.ToInt32(num % 10);
+    b += num % 10;
     num /= 10;
 }
 
