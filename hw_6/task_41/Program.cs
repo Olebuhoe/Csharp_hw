@@ -15,7 +15,7 @@ int CountPosNum(string str)
     return cnt;
 }
 
-string a = "0,7,8,-2,-2,8,9";
+string a = "0,7,8,-2,-2,8,9,75";
 
 Console.WriteLine($"Количество чисел больше нуля, введенных пользователем - {CountPosNum(a)}.");
 
